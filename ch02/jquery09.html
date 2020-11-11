@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .blue{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jquery css</h1>
+    <hr/>
+    <h3>addClass</h3>
+    <button onclick="changeBlue()">addClass</button>
+    <button onclick="removeBlue()">removeClass</button>
+    <button onclick="changeCss()">changeCss</button>
+    <div class="blue">첫번째 디자인</div>
+    <div id="d2">두번째 디자인</div>
+    
+    <script>
+        function changeBlue(){
+            $("#d2").addClass("blue");
+        }
+        function removeBlue(){
+            $("div").removeClass("blue");
+        }
+        function changeCss(){
+            $("div").css("background-color","yellow");
+        }
+    </script>
+</body>
+</html>

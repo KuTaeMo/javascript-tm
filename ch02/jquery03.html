@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>jquery 예제 3</title>
+</head>
+<body>
+    <h1>날 사라지게 해봐요!!</h1>
+    <h2>다시 불러볼께요!</h2>
+
+    <script>
+        $("h1").click(function(){
+            $("h1").fadeOut(1000);
+        });
+        $("h2").click(function(){
+            $("h1").fadeIn(1000);
+        });
+        
+    </script>
+</body>
+</html>

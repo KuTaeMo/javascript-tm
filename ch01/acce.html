@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            display: flex;
+        }
+        .num{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .ac{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    </style>
+</head>
+<body>
+    <input id="n1"type="text">
+    <input id="n2"type="text">
+    
+    <div class="a">
+        <div class="num">
+            <div><button id="b1">1</button></div>
+            <div><button id="b2">2</button></div>
+            <div><button id="b3">3</button></div>
+            <div><button id="b4">4</button></div>
+            <div><button id="b5">5</button></div>
+            <div><button id="b6">6</button></div>
+            <div><button id="b7">7</button></div>
+            <div><button id="b8">8</button></div>
+            <div><button id="b9">9</button></div>
+        </div>
+        <div class="ac">
+            <div><button onclick="add()">+</button></div>
+            <div><button onclick="min()">-</button></div>
+            <div><button onclick="xx()">*</button></div>
+            <div><button onclick="yy()">/</button></div>
+        </div>
+    </div>
+    <span id="n3"></span>
+    <script>
+        var n1El=document.querySelector("#n1");
+        var n2El=document.querySelector("#n2");
+
+        function add(){
+            var sum=Number(n1El.value)+Number(n2El.value);
+            n3.innerHTML=sum;
+        }
+        function min(){
+            var sum=Number(n1El.value)-Number(n2El.value);
+            n3.innerHTML=minus;
+        }
+        function xx(){
+            var sum=Number(n1El.value)*Number(n2El.value);
+            n3.innerHTML=x;
+        }
+        function yy(){
+            var sum=Number(n1El.value)/Number(n2El.value);
+            n3.innerHTML=y;
+        }
+        function input1(){
+            var number=Number(b1.value)
+        }
+        function input2(){
+            var number=Number(b2.value)
+        }
+        function input3(){
+            var number=Number(b3.value)
+        }
+        function input4(){
+            var number=Number(b4.value)
+        }
+        function input5(){
+            var number=Number(b5.value)
+        }
+        function input6(){
+            var number=Number(b6.value)
+        }
+        function input7(){
+            var number=Number(b7.value)
+        }
+        function input8(){
+            var number=Number(b8.value)
+        }
+        function input9(){
+            var number=Number(b9.value)
+        }
+    </script>
+</body>
+</html>
